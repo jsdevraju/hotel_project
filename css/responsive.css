@@ -1,0 +1,119 @@
+/* Tablete Devices */
+@media (max-width: 768px) {
+  .black {
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .header_top {
+    display: none;
+  }
+
+  .nav_item ul {
+    flex-direction: column;
+    position: absolute;
+    top: 170px;
+    left: -1500px;
+    width: 100%;
+    background: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+  }
+  .nav_item ul.active {
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .nav_item ul li {
+    margin: 0px;
+  }
+  .hand_menu {
+    display: block;
+  }
+
+  .about_container {
+    flex-direction: column;
+  }
+
+  .about_img {
+    width: 100%;
+  }
+
+  .about_content {
+    width: 100%;
+  }
+
+  .gallery_container {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .gallery_item {
+    width: 100%;
+  }
+
+  .rooms_container {
+    flex-direction: column;
+  }
+
+  .singleRoom_info {
+    width: 100%;
+  }
+
+  .facilities_container {
+    flex-direction: column-reverse;
+  }
+
+  .facilities_content {
+    width: 100%;
+  }
+
+  .facilities_img {
+    width: 100%;
+  }
+  .facilities .card_container {
+    flex-wrap: wrap;
+  }
+
+  .touc_container {
+    flex-direction: column;
+  }
+
+  .time_info {
+    width: 100%;
+  }
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .gallery_img {
+    width: 30%;
+  }
+  .footer .about {
+    width: 100%;
+  }
+
+  .footer .address {
+    width: 100%;
+  }
+
+  .footer .gallery {
+    width: 100%;
+  }
+}

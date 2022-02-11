@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap");
+
+/* Css Variable */
+:root {
+  --primary-color: #c19b77;
+  --secondary-color: #373737;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding:0 2rem;
+}
+
+.sec_p {
+  padding: 5rem 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav_links {
+  color: var(--white-color);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.nav_links:hover {
+  color: #ddd;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.sub_title {
+  color: #c19b77;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  color: #1c1c1c;
+  text-transform: capitalize;
+}
+
+.hand_menu{
+  display: none;
+}
+
+.hand_menu .bar{
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Header Top Styles Here */
+.header_top {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_container .left {
+  display: flex;
+  align-items: center;
+}
+
+.header_container .left p {
+  color: var(--white-color);
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+.header_container .left i {
+  color: var(--white-color);
+  margin-right: 1rem;
+}
+
+.header_container .right {
+  display: flex;
+  align-items: center;
+}
+
+.header_container .right p {
+  color: var(--white-color);
+  margin-left: 1rem;
+}
+
+/* Navbar Top Styles Here */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 80px 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav_item ul {
+  display: flex;
+}
+
+.nav_item ul li {
+  margin-left: 1.5rem;
+}
+
+/* Home Bannner Top Styles Here */
+.home {
+  background-image: linear-gradient(#33333379, #2222229c), url("../img/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 94vh;
+}
+
+.home_content p {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.home_content .middel {
+  text-align: center;
+  margin-top: 0.7rem;
+  color: #fff;
+}
+
+.home_content h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  text-align: center;
+}
+.home_content span {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+
+.btn_grp {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.black {
+  background-color: var(--secondary-color);
+  margin-right: 2rem;
+}
+
+/* About Styles Here */
+.about_container {
+  display: flex;
+  gap: 3rem;
+}
+
+.about_img {
+  width: 50%;
+  position: relative;
+}
+
+.about_content {
+  width: 50%;
+}
+
+.about_2 {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+}
+
+.about_2 img {
+  width: 80%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.desc {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #636363;
+  font-size: 1rem;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+/* Gallery Styles Start */
+.gallery_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery_item {
+  width: 475px;
+  text-align: center;
+}
+
+.gallery_item img {
+  height: 100%;
+}
+
+.text_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+.text_con.active {
+  background-color: var(--primary-color);
+}
+.sm_title {
+  position: relative;
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.sm_title::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -50px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--white-color);
+}
+.sm_title::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: -50px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--white-color);
+}
+.text_con h3 {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.text_con p {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-bottom: 1rem;
+}
+
+.text_con button {
+  padding: 15px 30px 10px;
+  border: 2px solid var(--white-color);
+  background-color: transparent;
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/* Hotel Service Styles Start  */
+.icon_container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.single_icon {
+  width: 25%;
+}
+.single_icon img {
+  width: 30%;
+}
+
+.rooms_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.singleRoom_info {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.singleRoom_info i {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.hotel_add,
+.hotel_time {
+  width: 100%;
+  background: var(--primary-color);
+  padding: 3rem;
+  color: #fff;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+.hotel_time {
+  margin-top: 2rem;
+  background: var(--secondary-color);
+}
+
+.rooms {
+  background-image: linear-gradient(#22222270, #2222226d),
+    url("../img/img-17.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 539px;
+}
+.rooms_2 {
+  background-image: linear-gradient(#22222270, #2222226d),
+    url("../img/img-18.jpg");
+}
+
+/* Hotel Service Ends Start  */
+
+/* Discount Styles Start Start  */
+.discount {
+  background-image: url("../img/parallax-19.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  height: 50vh;
+}
+.discount .container {
+  position: relative;
+}
+.offer {
+  background-color: var(--primary-color);
+  width: 450px;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+/* Discount Styles Ends Start  */
+
+/* HOTEL FACILITIES Styles Start Here */
+
+.facilities_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.facilities_content {
+  width: 70%;
+}
+
+.facilities_img {
+  width: 30%;
+}
+
+
+.facilities .card_container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+.facilities .card{
+    background-image: linear-gradient(#22222267, #22222235), url('../img/shop-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 189px;
+    height: 189px;
+    position: relative;
+}
+
+.card_2{
+    background-image: linear-gradient(#22222267, #22222235), url('../img/shop-5.jpg') !important; 
+}
+.card_3{
+    background-image: linear-gradient(#22222267, #22222235), url('../img/shop-8.jpg') !important;
+}
+.card_4{
+    background-image: linear-gradient(#22222267, #22222235), url('../img/shop-9.jpg') !important; 
+}
+
+.card .price{
+    background-color: var(--primary-color);
+    width: 80px;
+    padding: 0.3rem;
+    color: var(--white-color);
+    border-radius: 2px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    right: 30px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.card h3{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    font-size: 1.14rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* Contact Touch Styles Start Here */
+.contact{
+    background-image: url('../img/parallax-3.jpg');
+}
+
+.touc_container {
+    display: flex;
+    text-align: center;
+}
+
+.time_info {
+    background: var(--primary-color);
+    padding: 2rem;
+    color: #fff;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time_header{
+    margin-bottom: 1.5rem;
+}
+.time_header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.time_header p{
+    letter-spacing: 3px;
+}
+
+.time_list{
+    line-height: 40px;
+}
+.time_list ul li{
+    font-family: "Playfair Display", serif;
+}
+
+.ph{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.contact_form {
+    width: 70%;
+    background: #fff;
+    padding: 3rem;
+}
+
+.conatc_header {
+    margin-bottom: 2rem;
+}
+
+.c_header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form_control input, textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    display: block;
+    outline: none;
+    font-size: revert;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    font-family: "Playfair Display", serif;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.contact button{
+    margin-top: 2rem;
+    width: 100%;
+}
+/* Contact Touch Styles Ends Here */
+
+/* Footer Styles Start Here */
+.footer{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.footer .about {
+    width: 33%;
+}
+
+.footer .address {
+    width: 33%;
+}
+
+.footer .gallery {
+    width: 33%;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    margin-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+}
+
+.social .icon {
+    margin-right: 1rem;
+    color: var(--primary-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.social .icon:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.address h3 {
+    margin-bottom: 1rem;
+}
+
+.address ul li {
+    line-height: 40px;
+    font-family: "Playfair Display", serif;
+}
+
+.gallery h3 {
+    margin-bottom: 1rem;
+}
+
+.gallery_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.gallery_img {
+    width: 130px;
+    cursor: pointer;
+}
+.gallery_img img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Footer Styles Ends Here */
